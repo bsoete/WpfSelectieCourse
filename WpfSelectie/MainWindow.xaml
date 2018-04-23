@@ -14,6 +14,10 @@
         <ListBox x:Name="lstGokken" HorizontalAlignment="Left" Height="192" Margin="153,121,0,0" VerticalAlignment="Top" Width="157"/>
         <Label x:Name="lblGokken" Content="Label" HorizontalAlignment="Left" Margin="565,152,0,0" VerticalAlignment="Top"/>
         <Label Content="Aantal Gokken :" HorizontalAlignment="Left" Margin="429,152,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnGok2" Content="Gok2" HorizontalAlignment="Left" Margin="447,81,0,0" VerticalAlignment="Top" Width="75" Click="btnGok2_Click"/>
+        <Button x:Name="btnNieuwSpel" Content="Start nieuw Spel" HorizontalAlignment="Left" Margin="447,121,0,0" VerticalAlignment="Top" Width="114" Click="btnNieuwSpel_Click"/>
+        <Label x:Name="lblSpiek" Content="SpiekGetal" HorizontalAlignment="Left" Margin="652,345,0,0" VerticalAlignment="Top"/>
+        <Label Content="SpiekGetal :" HorizontalAlignment="Left" Margin="565,345,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
