@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfSelectie"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="GokSpel" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        
+        <Label Content="Selecteer Nummer :" HorizontalAlignment="Left" Margin="53,58,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtGok" HorizontalAlignment="Left" Height="23" Margin="214,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnGok" Content="Gok" HorizontalAlignment="Left" Margin="447,57,0,0" VerticalAlignment="Top" Width="75" Click="btnGok_Click"/>
+        <Label Content="Gokken :" HorizontalAlignment="Left" Margin="53,109,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstGokken" HorizontalAlignment="Left" Height="192" Margin="153,121,0,0" VerticalAlignment="Top" Width="157"/>
+
     </Grid>
 </Window>

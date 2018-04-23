@@ -24,5 +24,42 @@ namespace WpfSelectie
         {
             InitializeComponent();
         }
+
+        #region Globale Variabelen
+        // Variabele van het type Random (Genereerd random waarden)
+
+        Random rd = new Random();
+        int gokken;
+
+
+
+
+
+
+        #endregion
+
+        #region Methoden
+
+
+
+        #endregion
+
+        #region EventHandlers
+        // Acties bij het inladen van de Window
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        // Acties wanneer Gok wordt gemaakt
+        private void btnGok_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+        #endregion
+
+
     }
 }
