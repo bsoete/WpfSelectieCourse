@@ -30,7 +30,7 @@ namespace WpfSelectie
 
         Random rd = new Random();
         int gokken;
-
+        int teRadenCijfer;
 
 
 
@@ -40,7 +40,12 @@ namespace WpfSelectie
 
         #region Methoden
 
-
+        void PasGokkenAan()
+        {
+            
+            lblGokken.Content = gokken.ToString();
+            gokken++;
+        }
 
         #endregion
 
@@ -48,13 +53,35 @@ namespace WpfSelectie
         // Acties bij het inladen van de Window
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            // Bij het inladen wordt 1 random cijfer gemaakt
+            teRadenCijfer = rd.Next(1, 11);
+            gokken = 0;
+            // Aanpassen van de GUI
+            PasGokkenAan();
         }
 
         // Acties wanneer Gok wordt gemaakt
         private void btnGok_Click(object sender, RoutedEventArgs e)
         {
+            // inlezen van de keuze van de gebruiker
+            int gokkeuze = int.Parse(txtGok.Text);
 
+            // if Statement - Juist/Fout
+            if (gokkeuze == teRadenCijfer)
+            {
+                // Melding code is juist
+                lstGokken.Items.Add("Goed geraden !");
+
+                // Eventueel btn disabelen
+                btnGok.IsEnabled = false;
+            }
+            else
+            {
+                lstGokken.Items.Add("Uw keuze " + gokkeuze.ToString() + " is niet juist.");
+            }
+
+            // Aanpassen van de teller
+            PasGokkenAan();
         }
 
 
