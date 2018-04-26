@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfSelectie.WpfRaadSpel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSelectie"
+        mc:Ignorable="d"
+        Title="WpfRaadSpel" Height="285.44" Width="485.102" Loaded="Window_Loaded" Background="LightBlue">
+    <Grid Margin="0,0,3.6,0">
+        <TextBox x:Name="txtGok" HorizontalAlignment="Left" Height="23" Margin="214,35,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnGok" Content="Gok" HorizontalAlignment="Left" Margin="365,39,0,0" VerticalAlignment="Top" Width="75" Click="btnGok_Click"/>
+        <Label Content="Geef een getal tussen 0 en 11 :" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gokjes :" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSpiek" Content="0" HorizontalAlignment="Left" Margin="395,219,0,0" VerticalAlignment="Top" Foreground="#FFD92121"/>
+        <Label Content="Spiek (voor ontwikkeling):" HorizontalAlignment="Left" Margin="319,190,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblGokjes" Content="Eerdere Gokken :" HorizontalAlignment="Left" Margin="109,84,0,0" VerticalAlignment="Top" BorderThickness="1" BorderBrush="#FF080808"/>
+
+    </Grid>
+</Window>

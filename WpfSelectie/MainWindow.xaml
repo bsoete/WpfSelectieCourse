@@ -5,19 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfSelectie"
         mc:Ignorable="d"
-        Title="GokSpel" Height="450" Width="800" Loaded="Window_Loaded">
-    <Grid>
-        <Label Content="Selecteer Nummer :" HorizontalAlignment="Left" Margin="53,58,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtGok" HorizontalAlignment="Left" Height="23" Margin="214,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnGok" Content="Gok" HorizontalAlignment="Left" Margin="447,57,0,0" VerticalAlignment="Top" Width="75" Click="btnGok_Click"/>
-        <Label Content="Gokken :" HorizontalAlignment="Left" Margin="53,109,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="lstGokken" HorizontalAlignment="Left" Height="192" Margin="153,121,0,0" VerticalAlignment="Top" Width="157"/>
-        <Label x:Name="lblGokken" Content="Label" HorizontalAlignment="Left" Margin="565,152,0,0" VerticalAlignment="Top"/>
-        <Label Content="Aantal Gokken :" HorizontalAlignment="Left" Margin="429,152,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnGok2" Content="Gok2" HorizontalAlignment="Left" Margin="447,81,0,0" VerticalAlignment="Top" Width="75" Click="btnGok2_Click"/>
-        <Button x:Name="btnNieuwSpel" Content="Start nieuw Spel" HorizontalAlignment="Left" Margin="447,121,0,0" VerticalAlignment="Top" Width="114" Click="btnNieuwSpel_Click"/>
-        <Label x:Name="lblSpiek" Content="SpiekGetal" HorizontalAlignment="Left" Margin="652,345,0,0" VerticalAlignment="Top"/>
-        <Label Content="SpiekGetal :" HorizontalAlignment="Left" Margin="565,345,0,0" VerticalAlignment="Top"/>
-
-    </Grid>
+        Title="MainWindow" Height="249.887" Width="345.937" Background="LightBlue">
+    <StackPanel>
+        <Button x:Name="btnRaad" Margin="5" Padding="3" Content="CursusVoorbeeld" Click="btnRaad_Click"/>
+        <Button x:Name="btnRaadExtra" Margin ="5" Padding="3" Content="Uitbreiding (Les)" Click="btnRaadExtra_Click"></Button>
+        <Button x:Name="btnSlider" Margin="5" Padding="3" Content="Sliders" Click="btnSlider_Click"></Button>
+        <Button x:Name="btnSliderExtra" Margin="5" Padding="3" Content="SliderExtra" Click="btnSliderExtra_Click"></Button>
+        <Button x:Name="btnSwitch" Margin="5" Padding="3" Content="Switch" Click="btnSwitch_Click"></Button>
+    </StackPanel>
 </Window>

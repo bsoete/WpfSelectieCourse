@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfSelectie.WpfSwitch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSelectie"
+        mc:Ignorable="d"
+        Title="WpfSwitch" Height="336.23" Width="630.361" Background="LightBlue" Loaded="Window_Loaded">
+    <Grid>
+        <Button x:Name="btnDagWeergave" Content="Huidige Dag" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Width="75" Click="btnDagWeergave_Click"/>
+        <Label x:Name="lblMeldingDag" Content="Klik op huidige dag en hier komt het resultaat" HorizontalAlignment="Left" Margin="163,27,0,0" VerticalAlignment="Top"/>
+        <Label Content="ComputerAantal:" HorizontalAlignment="Left" Margin="30,74,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAantalComputers" HorizontalAlignment="Left" Height="23" Margin="149,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnBoodschapAantal" Content="BoodschapAantal" HorizontalAlignment="Left" Margin="303,77,0,0" VerticalAlignment="Top" Width="116" Click="btnBoodschapAantal_Click"/>
+        <Label x:Name="lblComputerBoodschap" Content="Boodschap na ingeven en klik op BoodschapAantal" HorizontalAlignment="Left" Margin="303,101,0,0" VerticalAlignment="Top" />
+        <Label Content="Tekst naar HTML (1) :" HorizontalAlignment="Left" Margin="30,148,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblHTMLNotatie" Content="HTMLNotatie" HorizontalAlignment="Left" Margin="345,148,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.541,0.479" FontWeight="Bold"/>
+        <ComboBox x:Name="cmbTeken" HorizontalAlignment="Left" Margin="163,148,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbTeken_SelectionChanged">
+            <ComboBoxItem Content="&lt;"/>
+            <ComboBoxItem Content="&gt;"/>
+            <ComboBoxItem Content="&amp;"/>
+            <ComboBoxItem Content="@"/>
+            <ComboBoxItem Content="€"/>
+        </ComboBox>
+        <Label Content="Tekst naar HTML (2) :" HorizontalAlignment="Left" Margin="30,213,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbTekenString" HorizontalAlignment="Left" Margin="163,213,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.405,0.738" SelectionChanged="cmbTekenString_SelectionChanged"/>
+        <Label x:Name="lblHTMLNotatieAlt" Content="HTMLNotatie" HorizontalAlignment="Left" Margin="345,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.542,-0.547" FontWeight="Bold"/>
+        <Label Content="=&gt;" HorizontalAlignment="Left" Margin="301,148,0,0" VerticalAlignment="Top"/>
+        <Label Content="=&gt;" HorizontalAlignment="Left" Margin="301,213,0,0" VerticalAlignment="Top" Height="22"/>
+
+    </Grid>
+</Window>
